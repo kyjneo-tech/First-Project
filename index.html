@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김영준의 자기소개</title> <!-- 1. 여기에 본인 이름 넣기 -->
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- 2. 여기에 style.css 파일 연결하기 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 네비게이션 바 -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <!-- 3. 여기에 본인 이름이나 닉네임 넣기 -->
+            <a class="navbar-brand" href="#">김영준의 자기소개 페이지</a>
+
+            <div class="navbar-nav ms-auto">
+                <!-- 4. 메뉴 3개 추가하기 (예: About, Skills, Contact) -->
+                <a class="nav-link" href="#about">자기소개</a>
+                <a class="nav-link" href="#skills">취미</a>
+                <a class="nav-link" href="#contact">연락처</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 메인 소개 섹션 -->
+    <section class="hero-section text-center py-5 animated-gradient">
+        <div class="container">
+            <!-- 5. 프로필 이미지 src에 본인 사진 URL 넣기 -->
+            <img src="/images/mc.png" alt="프로필 사진" class="profile-img rounded-circle mb-4">
+
+            <!-- 6. 본인 이름과 한 줄 소개 넣기 -->
+            <h1 class="display-4 glow-text">안녕하세요~💕</h1>
+            <p class="lead typing-cursor">저희 집에서 쑥쑥 크고 있는 아이입니다 25개월 이에요.</p>
+
+            <!-- 7. Bootstrap 버튼 색상 클래스 선택 (btn-primary, btn-success, btn-info 중 선택) -->
+            <a href="#about" class="btn btn-primary wave-btn">더 알아보기</a>
+        </div>
+    </section>
+
+
+
+    <!-- About 섹션 -->
+    <section id="about" class="py5 bg-light style="background-color: #FCE4EC;>
+        <div class="container">
+            <h2 class="text-center mb-4 glow-text">About Me</h2>
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <!-- 8. 자기소개 3-4줄 작성 -->
+                    <div class="interests mb-4">
+                        <span class="badge bg-primary m-1">AI 라벨링</span>
+                        <span class="badge bg-success m-1">N8N</span>
+                        <span class="badge bg-info m-1">메이크</span>
+                        <span class="badge bg-warning m-1">블로그</span>
+                    </div>
+                    <p>안녕하세요. 저는 기존에 AI 라벨링 업무를 담당하며, 평소에도 AI 기술에 깊은 관심을 가지고 있었습니다.</p>
+                    <p>AI를 활용해 n8n, 메이크와 같은 자동화 솔루션이나 간단한 웹페이지 제작, 블로그 작성 등을 직접 해보았습니다.</p>
+                    <p>이 과정에서 코딩에 관심이 생겨 이번 부트캠프에 참여하게 되었습니다.</p>
+                    <p>앞으로 잘 부탁드립니다.</p>
+                    <div class="list-group">
+                        <div class="list-group-item">
+                            <h6 class="mb-1">풀스택 개발자 양성 부트캠프</h6>
+                            <p class="mb-1">HTML, CSS, JavaScript 및 백엔드 기술 학습</p>
+                            <small>2025 ~ 현재</small>
+                        </div>
+                        <div class="list-group-item">
+                            <h6 class="mb-1">AI 라벨링 업무 담당</h6>
+                            <p class="mb-1">AI 데이터 분류 및 가공 작업 수행</p>
+                            <small>202x ~ 2025</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+<div class="timeline animated-gradient">
+    <div class="timeline-item">
+        <div class="timeline-date">2023 - 2025</div>
+        <div class="timeline-content">
+            <h4>AI 라벨링 업무 담당</h4>
+            <p>AI 데이터 분류 및 가공 작업 수행</p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <div class="timeline-date">2025 - 현재</div>
+        <div class="timeline-content">
+            <h4>풀스택 개발자 양성 부트캠프</h4>
+            <p>HTML, CSS, JavaScript 및 백엔드 기술 학습</p>
+        </div>
+    </div>
+</div>
+
+    <!-- Skills 섹션 -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 glow-text">나의 취미</h2>
+            <div class="row">
+
+                <!-- 9. 본인의 스킬 3개 작성 -->
+                <div class="col-md-4 text-center mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">저녁에 아이 재우고 영화 보며 맥주 한잔</h5>
+                            <p class="card-text">아기 키우면 문화생활 비슷하게 할 수 있는게 이거 밖에 없어요</p>
+                            <div class="skill-item mb-3">
+                                <label>참여도</label>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 80%">
+                                        80%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">AI와 대화</h5>
+                            <p class="card-text">일상 생활의 궁금한 점이나 복잡한 문제를 <br> AI와 대화하며 해결하는 것을 즐깁니다.</p>
+                            <p class="card-text">마치 똑똑한 조력자와 함께하는 것처럼, 많은 도움을 얻고 있습니다.</p>
+                            <div class="skill-item mb-3">
+                                <label>참여도</label>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 40%">
+                                        40%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">새로운 AI 서비스 써보기</h5>
+                            <p class="card-text">새로운 AI 서비스나 도구가 나오면 직접 사용해봅니다.</p>
+                            <p class="card-text">어떤 기능이 있는지, 어떻게 활용할 수 있을지 탐색하는 과정을 즐깁니다.</p>
+                            <p class="card-text">기술의 발전 속도를 직접 체험하고 따라가는 과정을 즐깁니다.</p>
+                            <div class="skill-item mb-3">
+                                <label>참여도</label>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 50%">
+                                        50%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 10. 나머지 2개 카드도 위와 같이 완성하기 -->
+            </div>
+        </div>
+        <section id="contact" class="py-5" style="background-color: #FCE4EC;">
+            <div class="container text-center">
+                <h2 class="mb-4" style="color: #424242;">Contact Me</h2>
+                <p style="color: #424242;">Email: kyjneo1@naver.com</p>
+            </div>
+        </section>
+
+        
+</body>
+
+</html>

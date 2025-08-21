@@ -1,0 +1,296 @@
+/* style.css */
+
+/* 1. body 배경색 설정 (#f8f9fa 또는 원하는 색상) */
+body {
+    background-color: #E8F5E9;
+    font-family: 'Pretendard', sans-serif;
+}
+
+/* 2. hero-section 배경 그라데이션 설정 */
+.hero-section {
+    background: linear-gradient(135deg, #C8E6C9 0%, #BBDEFB 100%);
+    /* 힌트: #667eea, #764ba2 같은 색상 조합 사용 */
+    color: white;
+    min-height: 500px;
+}
+
+/* 3. 프로필 이미지 크기 설정 (150px ~ 200px 추천) */
+.profile-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 7px solid #BBDEFB;
+    /* 4. 테두리 색상 설정 */
+}
+
+/* 제목 스타일 */
+.hero-section .display-4 {
+    color: #424242;
+    /* 진한 회색 */
+    font-weight: 700;
+}
+
+/* 한 줄 소개 스타일 */
+.hero-section .lead {
+    color: #616161;
+    /* 중간 회색 */
+    font-weight: 500;
+    /* 조금 얇게 만들어 제목과 구분해줘요 */
+}
+
+/* 5. 카드 호버 효과 추가 */
+.card {
+    transition: transform 0.3s;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 8. 섹션 제목 스타일 */
+h2 {
+    color: #424242;
+    /* 원하는 색상 */
+    font-weight: 700;
+    /* 600 또는 700 추천 */
+    position: relative;
+    display: inline-block;
+}
+
+/* 9. 제목 아래 장식선 추가 */
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    /* 50px 추천 */
+    height: 3px;
+    /* 3px 추천 */
+    background-color: #BDBDBD;
+    /* 원하는 색상 */
+}
+
+/* 10. 버튼 커스텀 스타일 */
+.btn {
+    padding: 12px 30px;
+    /* 12px 30px 추천 */
+    font-size: 16px;
+    /* 16px 추천 */
+    border-radius: 25px;
+    /* 25px 추천 */
+    text-decoration: none;
+    transition: all 0.3s;
+    background-color: #F8BBD0;
+    color: rgb(13, 13, 13);
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    /* 1.05 추천 */
+}
+
+/* 태블릿 반응형 (768px ~ 991px) */
+@media (max-width: 991px) {
+
+    /* 1. 카드 레이아웃 조정 */
+    .col-md-4 {
+        margin-bottom: 20px;
+        /* 20px 추천 */
+    }
+
+    /* 2. 패딩 조정 */
+    section {
+        padding: 40px 0;
+        /* 40px 추천 */
+    }
+}
+
+/* 모바일 반응형 (768px 이하) */
+@media (max-width: 768px) {
+
+    /* 3. 모바일에서 프로필 이미지 크기 조정 */
+    .profile-img {
+        width: 180px;
+        /* 120px 추천 */
+        height: 180px;
+    }
+
+    /* 4. 모바일에서 제목 크기 조정 */
+    .display-4 {
+        font-size: 2rem;
+        /* 2rem 추천 */
+    }
+
+    /* 5. hero 섹션 높이 조정 */
+    .hero-section {
+        min-height: 400px;
+        /* 400px 추천 */
+        padding: 30px 0;
+        /* 30px 추천 */
+    }
+
+    /* 6. 네비게이션 간격 조정 */
+    .navbar-nav {
+        text-align: center;
+    }
+}
+
+.typing-cursor::after {
+    content: '|';
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    50% {
+        opacity: 1;
+    }
+
+    51%,
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/* 3. 카드 3D 플립 효과 */
+.flip-card {
+    perspective: 1000px;
+    height: 300px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* 4. 텍스트 글로우 효과 */
+.glow-text {
+    text-shadow: 0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px #bbdefb,
+        /* 여기를 우리가 사용한 하늘색으로 바꿔줍니다 */
+        0 0 40px #bbdefb;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #bbdefb, 0 0 40px #bbdefb;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #bbdefb, 0 0 40px #bbdefb, 0 0 50px #bbdefb;
+    }
+}
+
+/* 5. 파동 효과 버튼 */
+.wave-btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.wave-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.wave-btn:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+
+/* 네비바 색 */
+.navbar {
+    background-color: #F8BBD0; 
+}
+
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: white;
+    font-weight: bold;
+}
+
+/* 2. 그라데이션 배경 애니메이션 */
+.animated-gradient {
+    background: linear-gradient(-45deg, #c8e6c9, #bbdefb, #fff8e1, #e3f2fd);
+    background-size: 400% 400%;
+    animation: gradient-shift 15s ease infinite;
+}
+
+@keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+/* 타임라인 스타일 */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #bbdefb;
+}
+
+.timeline-item {
+    position: relative;
+    margin: 50px 0;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    margin-left: auto;
+    margin-right: 55%;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    margin-left: 55%;
+}
+
+/* 지그재그 갤러리 */
+.zigzag-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.zigzag-gallery .item:nth-child(3n-1) {
+    transform: translateY(50px);
+}
+
+.container-about {
+    background-color: #E8F5E9;
+} 
+
+
